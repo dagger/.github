@@ -2,50 +2,57 @@
 
 ## GitHub Workflow
 
-The recommended workflow is to clone this repository from the `dagger` org and
-open pull requests from your own fork.
+The recommended workflow is to fork this repository and open pull requests from your fork.
 
-### 1) Cloning the repository
-
-```sh
-git clone https://github.com/dagger/$REPOSITORY.git
-```
-
-**NOTE**: If you cloned your fork, either switch back to `dagger/$REPOSITORY` using
-`git remote` or start over.
-
-### 2) Forking
+### 1. Fork, clone & configure Dagger upstream
 
 - Click on the _Fork_ button on GitHub
-- Add your fork as a remote
+- Clone your fork
+- Add the upstream repository as a new remote
 
 ```sh
-git remote add fork git@github.com:$YOUR_GITHUB_USER/$REPOSITORY.git
+# Clone repository
+git clone https://github.com/$YOUR_GITHUB_USER/$REPOSITORY.git
+
+# Add upstream origin
+git remote add upstream git@github.com:dagger/$REPOSITORY.git
 ```
 
-### 3) Creating a Pull Request
+### 2. Create a pull request
 
 ```sh
-# create a branch
-git checkout -b mybranch
+# Create a new feature branch
+git checkout -b my_feature_branch
 
-# make changes to your branch, use `git commit -s`, ...
+# Make changes to your branch
 # ...
 
-# push the branch to your own fork
-git push -u fork mybranch
+# Commit changes - remember to sign!
+git commis -s
 
-# create a pull request from https://github.com/dagger/$REPOSITORY
+# Push your new feature branch
+git push my_feature_branch
+
+# Create a new pull request from https://github.com/dagger/$REPOSITORY
 ```
 
-### 4) Rebasing
+### 3. Update your pull request with latest changes
 
 ```sh
+# Checkout main branch
 git checkout main
-git pull  # <-- this will pull from `dagger/$REPOSITORY`
-git checkout mybranch
-git rebase main  # <-- this will rebase `dagger/$REPOSITORY` into `$YOUR_GITHUB_USER/$REPOSITORY`
-git push -f -u fork mybranch  # <-- update the pull request
+
+# Update your fork's main branch from upstream
+git pull upstream main
+
+# Checkout your feature branch
+git checkout my_feature_branch
+
+# Rebase your feature branch changes on top of the updated main branch
+git rebase main
+
+# Update your pull request with latest changes
+git push -f my_feature_branch
 ```
 
 ## Scope of Pull Requests
