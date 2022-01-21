@@ -55,7 +55,7 @@ git rebase main
 git push -f my_feature_branch
 ```
 
-## Scope of Pull Requests
+## Scope of pull requests
 
 We prefer small incremental changes that can be reviewed and merged quickly.
 It's OK if it takes multiple pull requests to close an issue.
@@ -87,7 +87,7 @@ git commit -s
 
 The Signed-off-by line must match the **author's real name**, otherwise the PR will be rejected.
 
-### Commit Messages
+### Commit messages
 
 [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
@@ -135,19 +135,17 @@ Then from the repository root:
 markdownlint -c .markdownlint.yaml docs/**/*.md
 ```
 
-### How to retrigger a Github Action workflow?
+### How to re-run all GitHub Actions jobs?
 
 There isn't a button that Dagger contributors can click in their fork that will
-trigger a GitHub Action workflow run. See issue
+re-run all GitHub Actions jobs. See issue
 [#1669](https://github.com/dagger/dagger/issues/1169) for more context.
 
-The current workaround is to force push to your fork:
+The current workaround is to re-create the last commit:
 
 ```sh
-# Apply a small change to a comment
-git add --all
-make lint # Make sure that the linter is happy :)
-git commit --signoff --amend
-# push the branch to your own fork
-git push fork mybranch --force
+git commit --amend -s
+
+# Force push the new commit to re-run all GitHub Actions jobs:
+git push -f mybranch
 ```
