@@ -28,7 +28,7 @@ git checkout -b my_feature_branch
 # ...
 
 # Commit changes - remember to sign!
-git commis -s
+git commit -s
 
 # Push your new feature branch
 git push my_feature_branch
