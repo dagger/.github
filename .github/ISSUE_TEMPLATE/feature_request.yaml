@@ -1,40 +1,34 @@
 name: ✨ Feature request
 description: Propose a new feature
-title: "[FEATURE] <title>"
+title: "✨ <title>"
 labels: [kind/enhancement]
 body:
   - type: markdown
     attributes:
-      value: Tell us about your idea!
+      value: |
+        Please check if this feature request has [already been filed](./).
   - type: textarea
-    id: problem
+    id: goal
     attributes:
       label: What are you trying to do?
-      description: Tell us about the problem you're trying to solve.
+      description: Please tell us about the goal that you are trying to achieve.
     validations:
       required: false
   - type: textarea
-    id: solution
+    id: importance
     attributes:
-      label: How should we solve this?
-      description: If you have an idea of how you'd like to see this feature work, let us know.
+      label: Why is this important to you?
+      description: If you think that this could be important for others, let us know.
     validations:
       required: false
   - type: textarea
-    id: alternativ
+    id: workaround
     attributes:
-      label: What is the impact of not solving this?
-      description: (How) Are you currently working around the issue?
-    validations:
-      required: false
-  - type: textarea
-    id: context
-    attributes:
-      label: Anything else?
-      description: Any additional context to share, e.g., links
+      label: How are you currently working around this?
+      description: If you have a workaround in place, please share. This might help others & give us ideas.
     validations:
       required: false
   - type: markdown
     attributes:
       value: |
-        Thanks for filing a feature request!
+        Thank you for proposing a new feature!
