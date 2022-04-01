@@ -1,5 +1,5 @@
 name: 📖 Documentation
-description: Report an issue related to documentation
+description: Report a documentation issue
 labels: [area/documentation]
 body:
   - type: markdown
@@ -10,21 +10,24 @@ body:
         - Documenting undocumented APIs;
         - Elaborating on a particular topic;
         - Updating external links;
-        - anything else that doesn't require touching the codebase itself.
+        - anything else that doesn't require code changes.
 
-        If you followed the documentation but things don't work, take some time to consider if it's the documentation or the code that's wrong. In the latter, prefer using the "bug" template.
+        If you followed the documentation but things don't work, was it the docs or the code?
+        If the code was wrong, please file a bug report instead - link is above.
+
+        Before you go ahead, please check if this documentation issue has [already been reported](./).
   - type: textarea
     attributes:
-      label: Description
+      label: What is the issue?
       description: A clear and concise description of what the issue is.
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        We appreciate you taking the time to suggest improvements to our documentation.
-        If you want to become a Dagger contributor and help us improve this, we will appreciate it even more.
+        We appreciate you taking the time to suggest documentation improvements.
+        If you want to become a Dagger contributor and submit this improvement, we will appreciate it even more.
 
         [You can become a contributor in less than 10 minutes](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
-        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better for you.
-        All Dagger contributors will be forever grateful 🙌🏻
+        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better.
+        All Dagger contributors will be forever grateful to you 🙌
