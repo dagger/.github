@@ -13,17 +13,18 @@ body:
         - anything else that doesn't require touching the codebase itself.
 
         If you followed the documentation but things don't work, take some time to consider if it's the documentation or the code that's wrong. In the latter, prefer using the "bug" template.
-
-  - type: checkboxes
-    attributes:
-      label: Have you read the Contributing Guidelines on issues?
-      options:
-        - label: I have read the [Contributing Guidelines](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
-          required: true
-
   - type: textarea
     attributes:
       label: Description
       description: A clear and concise description of what the issue is.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        We appreciate you taking the time to suggest improvements to our documentation.
+        If you want to become a Dagger contributor and help us improve this, we will appreciate it even more.
+
+        [You can become a contributor in less than 10 minutes](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
+        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better for you.
+        All Dagger contributors will be forever grateful 🙌🏻
