@@ -1,0 +1,29 @@
+name: 📖 Documentation
+description: Report an issue related to documentation
+labels: [area/documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is strictly used for documentation requests, including:
+
+        - Documenting undocumented APIs;
+        - Elaborating on a particular topic;
+        - Updating external links;
+        - anything else that doesn't require touching the codebase itself.
+
+        If you followed the documentation but things don't work, take some time to consider if it's the documentation or the code that's wrong. In the latter, prefer using the "bug" template.
+
+  - type: checkboxes
+    attributes:
+      label: Have you read the Contributing Guidelines on issues?
+      options:
+        - label: I have read the [Contributing Guidelines](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of what the issue is.
+    validations:
+      required: true

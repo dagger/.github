@@ -7,6 +7,12 @@ body:
     attributes:
       value: |
         Please check if this bug has [already been reported](./).
+  - type: checkboxes
+    attributes:
+      label: Have you read the Contributing Guidelines?
+      options:
+        - label: I have read the [Contributing Guidelines](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
+          required: true
   - type: textarea
     id: what-happened
     attributes:
