@@ -93,13 +93,12 @@ The Signed-off-by line must match the **author's real name**, otherwise the PR w
 
 Guidelines:
 
-- Group Commits: Each commit should represent a meaningful change (e.g. implement
-  feature X, fix bug Y, ...).
-- For instance, a PR should not look like _1) Add Feature X 2) Fix Typo 3) Changes to features X 5) Bugfix for feature X 6) Fix Linter 7) ..._<br>
-  Instead, these commits should be squashed together into a single "Add Feature" commit.
+- **Group Commits:** Each commit should represent a meaningful change (e.g. implement feature X, fix bug Y, ...).
+  - For instance, a PR should not look like _1) Add Feature X 2) Fix Typo 3) Changes to features X 5) Bugfix for feature X 6) Fix Linter 7) ...
+  - Instead, these commits should be squashed together into a single "Add Feature" commit.
 - Each commit should work on its own: it must compile, pass the linter and so on.
-- This makes life much easier when using `git log`, `git blame`, `git bisect`, etc.
-- For instance, when doing a `git blame` on a file to figure out why a change
+  - This makes life much easier when using `git log`, `git blame`, `git bisect`, etc.
+  - For instance, when doing a `git blame` on a file to figure out why a change
   was introduced, it's pretty meaningless to see a _Fix linter_ commit message.
   "Add Feature X" is much more meaningful.
 - Use `git rebase -i main` to group commits together and rewrite their commit message
@@ -107,6 +106,14 @@ Guidelines:
   change the last commit (amend) instead of creating a new commit.
 - Format: Use the imperative mood in the subject line: "If applied, this commit
   will _your subject line here_"
+- Add the following prefixes to your commit message to help trigger automated processes[^1]:
+  - `docs:` for documentation changes only (e.g., `docs: Fix typo in X`);
+  - `test:` for changes to tests only (e.g., `test: Check if X does Y`);
+  - `website:` for the documentation website (i.e., the frontend code; e.g., `website: Add X link to navbar`);
+  - `ci:` for internal CI specific changes (e.g., `ci: Enable X for tests`);
+  - `infra:` for infrastructure changes (e.g., `infra: Enable cloudfront for X`);
+
+[^1]: See [https://www.conventionalcommits.org](https://www.conventionalcommits.org)
 
 ## Docs
 
