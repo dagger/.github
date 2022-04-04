@@ -47,4 +47,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping us improve Dagger!
+        We appreciate you taking the time to report a bug.
+        If you want to become a Dagger contributor and submit this improvement, we will appreciate it even more.
+
+        [You can become a contributor in less than 10 minutes](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
+        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better.
+        All Dagger contributors will be forever grateful to you 🙌
