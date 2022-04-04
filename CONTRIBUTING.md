@@ -109,6 +109,7 @@ Guidelines:
 - Add the following prefixes to your commit message to help trigger automated processes[^1]:
   - `docs:` for documentation changes only (e.g., `docs: Fix typo in X`);
   - `test:` for changes to tests only (e.g., `test: Check if X does Y`);
+  - `chore:` general things that should be excluded (e.g., `chore: Clean up X`);
   - `website:` for the documentation website (i.e., the frontend code; e.g., `website: Add X link to navbar`);
   - `ci:` for internal CI specific changes (e.g., `ci: Enable X for tests`);
   - `infra:` for infrastructure changes (e.g., `infra: Enable cloudfront for X`);
