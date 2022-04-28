@@ -25,9 +25,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        We appreciate you taking the time to suggest documentation improvements.
-        If you want to become a Dagger contributor and submit this improvement, we will appreciate it even more.
-
-        [You can become a contributor in less than 10 minutes](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
-        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better.
-        All Dagger contributors will be forever grateful to you 🙌
+        We appreciate you taking the time to report a bug.
+        If you want to become a Dagger contributor and submit this improvement, everyone will appreciate it.
+        You can become a contributor in less than 10 minutes. [This is how.](https://docs.dagger.io/1227/contributing#github-workflow)
