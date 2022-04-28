@@ -33,7 +33,7 @@ body:
     attributes:
       label: Dagger version
       description: Please paste the output of `dagger version`
-      placeholder: e.g. dagger 0.2.2 (fead547d) darwin/arm64
+      placeholder: e.g. dagger 0.2.8 (92c8c7a2) darwin/arm64
     validations:
       required: true
   - type: input
@@ -41,15 +41,12 @@ body:
     attributes:
       label: OS version
       description: Which OS version are you running `dagger` on?
-      placeholder: e.g. macOS 12.3, Ubuntu 20.04, Windows 11, etc.
+      placeholder: e.g. macOS 12.3, Ubuntu 22.04, Windows 11, etc.
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
         We appreciate you taking the time to report a bug.
-        If you want to become a Dagger contributor and submit this improvement, we will appreciate it even more.
-
-        [You can become a contributor in less than 10 minutes](https://github.com/dagger/.github/blob/main/CONTRIBUTING.md).
-        If you try it out and it doesn't live up to this promise, we definitely want to know what would have made it better.
-        All Dagger contributors will be forever grateful to you 🙌
+        If you want to become a Dagger contributor and submit this improvement, everyone will appreciate it.
+        You can become a contributor in less than 10 minutes. [This is how.](https://docs.dagger.io/1227/contributing#github-workflow)

@@ -31,4 +31,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for proposing a new feature!
+        We appreciate you taking the time to propose this new feature.
+        If you want to become a Dagger contributor and submit the first step towards it, we will appreciate it.
+        You can become a contributor in less than 10 minutes. [This is how.](https://docs.dagger.io/1227/contributing#github-workflow)
