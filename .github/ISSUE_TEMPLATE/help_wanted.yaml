@@ -8,6 +8,14 @@ body:
       value: |
         Please answer these questions before submitting your issue. Thanks!
         For general questions, please use our help channel on discord: https://discord.com/invite/dagger-io
+  - type: input
+    id: dagger-url
+    attributes:
+      label: Dagger run URL
+      description: URL of the Dagger execution (if applicable)
+      placeholder: e.g. https://app.dagger.cloud/<username>/runs/<run_id>
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
