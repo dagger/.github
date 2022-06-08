@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        TBD.
+        In order to use this template, you need to create a Dagger Cloud account. [This is how.](https://docs.dagger.io/1241/dagger-cloud/)
+        Once you have created an account, you can click on "Ask for help" in your Dagger Cloud run view.
+        This will automatically fill in the Dagger Cloud run URL.
   - type: input
     id: dagger-url
     attributes:
