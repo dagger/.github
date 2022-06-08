@@ -6,72 +6,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please answer these questions before submitting your issue. Thanks!
-        For general questions, please use our help channel on discord: https://discord.com/invite/dagger-io
+        TBD.
   - type: input
     id: dagger-url
     attributes:
-      label: Dagger run URL
+      label: Dagger Cloud run URL
       description: |
         URL of the Dagger execution. [Learn more.](https://docs.dagger.io/1241/dagger-cloud/)
       placeholder: e.g. https://dagger.cloud/runs/<run_id>
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: The more detail, the better.
-    validations:
-      required: true
-  - type: textarea
-    id: what-was-expected
-    attributes:
-      label: What did you expect to happen?
-    validations:
-      required: false
-  - type: textarea
-    id: log-output
-    attributes:
-      label: Log output
-      description: |
-        Please paste the log output using `dagger run <ACTION> -—log-format plain -—no-cache`
-        Only needed if you did not provide a Dagger run URL.
-    validations:
-      required: false
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
+      label: What happened? What did you expect to happen?
       description: The more detail, the better.
     validations:
       required: false
-  - type: input
-    id: dagger-version
-    attributes:
-      label: Dagger version
-      description: Please paste the output of `dagger version`
-      placeholder: e.g. dagger 0.2.17 (0bdc0bf9) darwin/arm64
-    validations:
-      required: false
-  - type: input
-    id: dagger-latest-version
-    attributes:
-      label: Does this issue reproduce with the latest release?
-      description: If no, please let us know the reason for not using the latest version.
-    validations:
-      required: false
-  - type: input
-    id: os-version
-    attributes:
-      label: OS version
-      description: |
-        Which OS version are you running `dagger` on? 
-        * **Linux**: `cat /etc/os-release`
-        * **Windows**:
-          1. Run dialog box. Press `Windows Key+R` to launch the `Run` dialog box. open `launch` section.
-          2. Go to command prompt. Type `cmd`, then click `OK`. This should open `Command Prompt`. The first line you see inside `Command Prompt` is your `Windows OS version`.
-        * **Mac**: [How to find it on Mac](https://support.apple.com/en-us/HT201260#:~:text=From%20the%20Apple%20menu%20%EF%A3%BF,version%20number%20to%20see%20it.)
-      placeholder: e.g. macOS 12.3, Ubuntu 22.04, Windows 11, etc.
-    validations:
-      required: true
