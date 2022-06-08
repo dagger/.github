@@ -12,35 +12,38 @@ body:
     id: dagger-url
     attributes:
       label: Dagger run URL
-      description: URL of the Dagger execution (if applicable)
-      placeholder: e.g. https://app.dagger.cloud/<username>/runs/<run_id>
+      description: |
+        URL of the Dagger execution. [Learn more.](https://docs.dagger.io/1241/dagger-cloud/)
+      placeholder: e.g. https://dagger.cloud/runs/<run_id>
     validations:
       required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: What is the issue?
-      description: What did you see? Please tell us as many details as possible.
+      label: What happened?
+      description: The more detail, the better.
     validations:
       required: true
   - type: textarea
     id: what-was-expected
     attributes:
-      label: What did you expect to see?
+      label: What did you expect to happen?
     validations:
       required: false
   - type: textarea
     id: log-output
     attributes:
       label: Log output
-      description: Please paste the log output using `dagger run <ACTION> -—log-format plain -—no-cache`
+      description: |
+        Please paste the log output using `dagger run <ACTION> -—log-format plain -—no-cache`
+        Only needed if you did not provide a Dagger run URL.
     validations:
       required: false
   - type: textarea
     id: steps
     attributes:
       label: Steps to reproduce
-      description: More details the better!
+      description: The more detail, the better.
     validations:
       required: false
   - type: input
@@ -48,7 +51,7 @@ body:
     attributes:
       label: Dagger version
       description: Please paste the output of `dagger version`
-      placeholder: e.g. dagger 0.2.11 (0088c621) darwin/arm64
+      placeholder: e.g. dagger 0.2.17 (0bdc0bf9) darwin/arm64
     validations:
       required: false
   - type: input
