@@ -32,8 +32,8 @@ body:
     id: dagger-version
     attributes:
       label: Dagger version
-      description: Please paste the output of `dagger version`
-      placeholder: e.g. dagger 0.2.8 (92c8c7a2) darwin/arm64
+      description: Please paste the type + version of SDK, or the git commit number
+      placeholder: e.g. NodeJS v0.3.0 | Go v0.4.0 | Python v0.2.0 | 5219a37e
     validations:
       required: true
   - type: input
