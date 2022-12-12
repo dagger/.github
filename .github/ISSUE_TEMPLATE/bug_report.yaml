@@ -28,6 +28,15 @@ body:
       description: What are the steps that we need to follow to reproduce this issue?
     validations:
       required: false
+  - type: dropdown
+    id: sdk-lang
+    attributes:
+      label: SDK Language
+      options:
+        - go
+        - python
+        - nodejs
+        - cue
   - type: input
     id: dagger-version
     attributes:
