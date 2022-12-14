@@ -29,19 +29,19 @@ body:
     validations:
       required: false
   - type: input
-    id: dagger-version
+    id: sdk-version
     attributes:
-      label: Dagger version
-      description: Please paste the output of `dagger version`
-      placeholder: e.g. dagger 0.2.8 (92c8c7a2) darwin/arm64
+      label: SDK version
+      description: Which SDK have you encountered this issue with?
+      placeholder: e.g. Go SDK v0.4.2, Python SDK v0.2.1, Node.js SDK v0.3.0, etc.
     validations:
       required: true
   - type: input
     id: os-version
     attributes:
       label: OS version
-      description: Which OS version are you running `dagger` on?
-      placeholder: e.g. macOS 12.3, Ubuntu 22.04, Windows 11, etc.
+      description: Which OS version are you running on?
+      placeholder: e.g. macOS 12.6, Ubuntu 22.04, Windows 11, etc.
     validations:
       required: true
   - type: markdown
