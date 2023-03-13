@@ -3,21 +3,6 @@ description: Ask for support
 labels: [help wanted]
 title: "🖐️ <title>"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        In order to use this template, you need to create a Dagger Cloud account. [This is how.](https://docs.dagger.io/1241/dagger-cloud/)
-        Once you have created an account, you can click on "Ask for help" in your Dagger Cloud run view.
-        This will automatically fill in the Dagger Cloud run URL.
-  - type: input
-    id: dagger-url
-    attributes:
-      label: Dagger Cloud run URL
-      description: |
-        URL of the Dagger execution. [Learn more.](https://docs.dagger.io/1241/dagger-cloud/)
-      placeholder: e.g. https://dagger.cloud/runs/<run_id>
-    validations:
-      required: true
   - type: textarea
     id: what-happened
     attributes:
