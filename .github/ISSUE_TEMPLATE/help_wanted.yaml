@@ -1,6 +1,6 @@
 name: 🖐️ Help wanted
 description: Ask for support
-labels: [help wanted]
+labels: [support]
 title: "🖐️ <title>"
 body:
   - type: textarea
