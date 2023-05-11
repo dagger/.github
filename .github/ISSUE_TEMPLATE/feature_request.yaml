@@ -1,7 +1,7 @@
 name: ✨ Feature request
 description: Propose a new feature
 title: "✨ <title>"
-labels: [kind/enhancement]
+labels: ["kind/enhancement", "kind/user-request"]
 body:
   - type: markdown
     attributes:
