@@ -15,33 +15,24 @@ body:
     validations:
       required: true
   - type: textarea
-    id: log-output
-    attributes:
-      label: Log output
-      description: Please paste the log output
-    validations:
-      required: false
-  - type: textarea
     id: steps
     attributes:
       label: Steps to reproduce
       description: What are the steps that we need to follow to reproduce this issue?
     validations:
       required: false
-  - type: input
-    id: sdk-version
+  - type: textarea
+    id: log-output
     attributes:
-      label: SDK version
-      description: Which SDK have you encountered this issue with?
-      placeholder: e.g. Go SDK v0.4.2, Python SDK v0.2.1, Node.js SDK v0.3.0, etc.
+      label: Log output
+      description: Please paste the log output
     validations:
-      required: true
+      required: false
   - type: input
-    id: os-version
+    id: version
     attributes:
-      label: OS version
-      description: Which OS version are you running on?
-      placeholder: e.g. macOS 12.6, Ubuntu 22.04, Windows 11, etc.
+      label: dagger version
+      description: Output of `dagger version`
     validations:
       required: true
   - type: markdown
